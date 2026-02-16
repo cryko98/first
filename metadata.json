@@ -1,0 +1,5 @@
+{
+  "name": "First in my bloodline to...",
+  "description": "A simple web app to generate and share a 'First in my bloodline to...' tweet to a specific X community, celebrating unique achievements.",
+  "requestFramePermissions": []
+}
