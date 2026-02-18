@@ -23,13 +23,13 @@ const AppFooter: React.FC<AppFooterProps> = ({ contractAddress, ticker }) => {
     <footer className="w-full max-w-2xl mx-auto py-4 px-4 text-center text-gray-500 text-xs">
       <div className="flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0">
         <a
-          href="https://x.com/i/communities/2023413997173711183"
+          href="https://x.com"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center space-x-2 hover:text-white transition-colors"
         >
           <XIcon />
-          <span>Join our Community</span>
+          <span>X</span>
         </a>
         <div className="flex flex-col items-center sm:items-end">
             <div className="flex items-center space-x-2">

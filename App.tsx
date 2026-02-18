@@ -6,9 +6,8 @@ import AppFooter from './components/AppFooter';
 const App: React.FC = () => {
   const [completion, setCompletion] = useState<string>('');
   
-  const contractAddress = "7t1CftyahqUAgd5bcnnqAQGAtSF5onzSTkcqpzWMpump";
+  const contractAddress = "xxxxxxxxxxxxxxxxxxxxxxxxxx";
   const ticker = "$FIRST";
-  const communityId = "2023413997173711183";
 
   const handleTweet = useCallback(() => {
     if (completion.trim() === '') {
@@ -18,10 +17,10 @@ const App: React.FC = () => {
 
     const tweetText = `first in my bloodline to ${completion}\n\nca: ${contractAddress}\n${ticker}`;
     const encodedTweetText = encodeURIComponent(tweetText);
-    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodedTweetText}&community_id=${communityId}`;
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodedTweetText}`;
 
     window.open(twitterUrl, '_blank', 'noopener,noreferrer');
-  }, [completion, contractAddress, ticker, communityId]);
+  }, [completion, contractAddress, ticker]);
 
   return (
     <div className="bg-black text-white min-h-screen flex flex-col items-center justify-center p-4 selection:bg-blue-500 selection:text-white">
